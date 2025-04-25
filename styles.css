@@ -1,0 +1,57 @@
+html {
+  font-size: 62.5%;
+}
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 10rem;
+  margin: 1rem 0;
+  border: 1px solid red;
+}
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.hidden {
+  display: none;
+}
+.main-heading {
+  text-align: center;
+  font-size: 5rem;
+}
+.text-container {
+  border: 1px solid #000;
+}
+.typing-area {
+  display: flex;
+  width: 100%;
+}
+.restriction {
+  display: flex;
+  justify-content: space-between;
+}
+#regulate {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+.total-character, .sentence-count, .word-count {
+  display: flex;
+  position: relative;
+  width: 30%;
+  border: 1px solid #000;
+}
+.bg {
+
+  
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Character counter</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  <header id="header">
+    <img src="./images/logo-light-theme.svg" alt="logo-light-theme">
+    <button class="theme-switcher">
+      <img src="./images/icon-moon.svg" class="" alt="moon icon">
+      <img src="./images/icon-sun.svg" class="hidden" alt="sun icon">
+    </button>
+  </header>
+  <main class="container">
+    <h1 class="main-heading">Analyze your text in real-time.</h1>
+    <section class="text-container">
+      <textarea name="" id="typing-area" cols="" rows="10" aria-placeholder="Start typing" placeholder="Start typing here… (or paste your text)"></textarea>
+      <div class="restriction">
+        <div id="regulate">
+          <input type="checkbox" name="" id="spaces">
+          <label for="spaces">Exclude Spaces</label>
+          <input type="checkbox" name="" id="limit">
+          <label for="limit">Set Character Limit</label>
+          <input type="text" value="" id="character-count" />
+        </div>
+        <p class="reading-time">Approx. reading time: 0 minutes</p>
+      </div>
+    </section>
+    <section class="cards">
+      <div class="total-character">
+        <h2 class="number">00</h2>
+        <p class="text">Total Characters</p>
+        <img class="bg" src="./images/pattern-character-count.svg" alt="character count background">
+      </div>
+      <div class="word-count">
+        <h2 class="number">00</h2>
+        <p class="text">Total Characters</p>
+        <img class="bg" src="./images/pattern-word-count.svg" alt="word count background">
+      </div>
+      <div class="sentence-count">
+        <h2 class="number">00</h2>
+        <p class="text">Total Characters</p>
+        <img class="bg" src="./images/pattern-sentence-count.svg" alt="sentence count background">
+      </div>
+    </section>
+    <section class="density-area">
+      <h3>Letter Density</h3>
+      <p class="alert">No characters found. Start typing to see letter density.</p>
+    </section>
+  </main>
+</body>
+</html>

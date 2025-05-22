@@ -3,52 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frontend Mentor | Character counter</title>
+  <title>Character Counter</title>
   <link rel="stylesheet" href="./styles.css">
-  <script defer src="./script.js"></script>
 </head>
 <body>
   <header id="header">
-    <img src="./images/logo-light-theme.svg" alt="logo-light-theme">
-    <button class="theme-switcher">
-      <img src="./images/icon-moon.svg" class="" alt="moon icon">
-      <img src="./images/icon-sun.svg" class="hidden" alt="sun icon">
-    </button>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./images/logo-dark-theme.svg" class="hidden" alt="logo character counter" >
+        <img src="./images/logo-light-theme.svg" alt="logo character counter" srcset="">
+      </div>
+      <button class="theme-switcher">
+        <img src="./images/icon-moon.svg" alt="moon icon">
+        <img src="./images/icon-sun.svg" class="hidden" alt="Sun Icon">
+      </button>
+    </nav>
   </header>
   <main class="container">
     <h1 class="main-heading">Analyze your text in real-time.</h1>
     <section class="text-container">
-      <textarea name="" id="typing-area" cols="" rows="10" aria-placeholder="Start typing" placeholder="Start typing here… (or paste your text)"></textarea>
-      <div class="restriction">
-        <div id="regulate">
-          <input type="checkbox" name="" id="spaces">
-          <label for="spaces">Exclude Spaces</label>
-          <input type="checkbox" name="" id="limit">
-          <label for="limit">Set Character Limit</label>
-          <input type="text" value="" id="character-count" />
+      <form action="" class="text-analysis-form">
+        <label for="typing-area" class="visually-hidden">Text input area</label>
+        <textarea name="text-input" id="typing-area" aria-label="Text area input" placeholder="Start typing here... (or paste your text)"></textarea>
+        <div class="restriction">
+          <div class="regulate">
+            <div class="checkbox-group">
+              <input type="checkbox" name="exclude spaces" id="spaces">
+              <label for="spaces">Exclude Spaces</label>
+            </div>
+            <div class="checkbox-group">
+              <input type="checkbox" name="set limit" id="limit" />
+              <label for="spaces">Set Character Limit</label>
+              <div class="input-group">
+                <label for="character-count" class="visually-hidden">Character limit</label>
+                <input type="text" id="character-count" name="character-limit" />
+              </div>
+            </div>
+          </div>
+          <p class="reading-time">Approx. reading time: 0 minutes</p>
         </div>
-        <p class="reading-time">Approx. reading time: 0 minutes</p>
-      </div>
+      </form>
     </section>
     <section class="cards">
-      <div class="total-character">
-        <h2 class="number">00</h2>
-        <p class="text">Total Characters</p>
+      <article class="total-character">
+        <div class="details">
+          <h2 class="number">00</h2>
+          <p class="text">Total Characters</p>
+        </div>
         <img class="bg" src="./images/pattern-character-count.svg" alt="character count background">
-      </div>
-      <div class="word-count">
-        <h2 class="number">00</h2>
-        <p class="text">Total Characters</p>
+      </article>
+      <article class="word-count">
+        <div class="details">
+          <h2 class="number">00</h2>
+          <p class="text">Total Words</p>
+        </div>
         <img class="bg" src="./images/pattern-word-count.svg" alt="word count background">
-      </div>
-      <div class="sentence-count">
-        <h2 class="number">00</h2>
-        <p class="text">Total Characters</p>
+      </article>
+      <article class="sentence-count">
+        <div class="details">
+          <h2 class="number">00</h2>
+          <p class="text">Total Sentences</p>
+        </div>
         <img class="bg" src="./images/pattern-sentence-count.svg" alt="sentence count background">
-      </div>
+      </article>
     </section>
     <section class="density-area">
-      <h3>Letter Density</h3>
+      <h3 class="density-heading">Letter Density</h3>
       <p class="alert">No characters found. Start typing to see letter density.</p>
     </section>
   </main>

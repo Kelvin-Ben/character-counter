@@ -1,0 +1,77 @@
+.container {
+  padding: 0 var(--container-padding);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.text-analysis-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#typing-area {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  background-color: var(--color-input-bg);
+  border: none;
+  padding: var(--spacing-md) var(--spacing-lg) 0 var(--spacing-lg);
+  height: 15rem;
+  border-radius: var(--border-radius-md);
+  resize: none;
+  cursor: pointer;
+}
+
+#typing-area:focus {
+  outline: 2px solid var(--color-primary);
+  border: none;
+}
+
+.restriction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.regulate {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-right: var(--spacing-lg);
+}
+
+.checkbox-group:nth-child(2) {
+  margin-right: var(--spacing-md);
+}
+
+#spaces, #limit {
+  margin-right: var(--spacing-sm);
+  transform: scale(1.5);
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+#character-count {
+  display: none;
+  width: 4rem;
+  height: 2rem;
+  border-radius: var(--border-radius-sm);
+  padding: 0.1rem;
+  text-align: center;
+  margin-left: var(--spacing-md);
+}

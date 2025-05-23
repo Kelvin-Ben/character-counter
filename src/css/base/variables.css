@@ -1,0 +1,32 @@
+:root {
+  /* Font Family */
+  --font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  
+  /* Colors */
+  --color-primary: #d3a0fa;
+  --color-secondary: #ff9f00;
+  --color-tertiary: #FE8159;
+  --color-text: #12131A;
+  --color-background: #fff;
+  --color-input-bg: #e4e4ef;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+  --spacing-xl: 5rem;
+  
+  /* Border Radius */
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 1rem;
+  
+  /* Container */
+  --container-max-width: 1440px;
+  --container-padding: 10rem;
+  
+  /* Typography */
+  --font-size-base: 1.6rem;
+  --font-size-heading: 5rem;
+  --line-height-base: 1.5;
+}

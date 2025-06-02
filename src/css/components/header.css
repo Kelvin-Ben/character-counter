@@ -4,6 +4,8 @@
   padding: var(--spacing-sm) var(--container-padding);
   flex-wrap: wrap;
   box-sizing: border-box;
+  margin: auto;
+
 }
 
 .navbar {
@@ -11,7 +13,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: auto;
 }
 
 .theme-switcher {

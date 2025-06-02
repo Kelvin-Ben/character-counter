@@ -1,78 +1,78 @@
-/* Media Queries */
+/* media queries */
 @media screen and (max-width: 1024px) {
-  .container {
-    padding: 0 var(--spacing-xl);
-  }
-  
   #header {
     padding: var(--spacing-sm) var(--spacing-xl);
   }
-  
+  .container {
+    padding: 0 var(--spacing-xl);
+  }
   .main-heading {
     font-size: 4rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    padding: 0 var(--spacing-lg);
+  body {
+    font-size: 1.4rem;
   }
-  
   #header {
     padding: var(--spacing-md) var(--spacing-lg);
   }
-  
+  .container {
+    padding: 0 var(--spacing-lg);
+  }
   .main-heading {
     font-size: 3.5rem;
   }
-  
   #typing-area {
     padding: var(--spacing-md);
-    height: 15rem;
+    height: 18rem;
   }
-
   .restriction {
     margin-top: var(--spacing-md);
-    justify-content: space-around;
   }
-
   .regulate {
     width: 100%;
     flex-direction: column;
-    align-items: start;
-    justify-content: center;
+    align-items: flex-start;
     gap: var(--spacing-sm);
-    margin-bottom: 0;
   }
-
   .reading-time {
     width: 100%;
   }
-  
-  .total-character, .sentence-count, .word-count {
-    width: 100%;
+  .cards {
+    margin-top: var(--spacing-sm);
+  }
+  .total-character, .word-count, .sentence-count {
     max-width: 400px;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .container {
-    padding: 0 var(--spacing-md);
-  }
-  
   #header {
     padding: var(--spacing-xs) var(--spacing-md);
   }
-  
+  .logo {
+    width: 100%;
+  }
+ .logo img {
+    width: 60%;
+    object-fit: scale-down;
+  }
+  .theme-switcher img {
+    width: 80%;
+    object-fit: scale-down;
+  }
+  .container {
+    padding: 0 var(--spacing-md);
+  }
   .main-heading {
     font-size: 3rem;
-    margin-bottom: var(--spacing-lg) 0;
   }
-  
-  .checkbox-group {
-    margin-right: var(--spacing-md);
+  #typing-area {
+    padding: var(--spacing-sm);
   }
-  
   .number {
     font-size: 4rem;
   }

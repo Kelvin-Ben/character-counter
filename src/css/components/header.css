@@ -1,0 +1,31 @@
+#header {
+  max-width: var(--container-max-width);
+  width: 100%;
+  padding: var(--spacing-sm) var(--container-padding);
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: auto;
+
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: var(--font-size-heading);
+  margin: var(--spacing-md) 0;
+}

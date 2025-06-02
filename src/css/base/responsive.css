@@ -1,0 +1,79 @@
+/* media queries */
+@media screen and (max-width: 1024px) {
+  #header {
+    padding: var(--spacing-sm) var(--spacing-xl);
+  }
+  .container {
+    padding: 0 var(--spacing-xl);
+  }
+  .main-heading {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1.4rem;
+  }
+  #header {
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+  .container {
+    padding: 0 var(--spacing-lg);
+  }
+  .main-heading {
+    font-size: 3.5rem;
+  }
+  #typing-area {
+    padding: var(--spacing-md);
+    height: 18rem;
+  }
+  .restriction {
+    margin-top: var(--spacing-md);
+  }
+  .regulate {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+  .reading-time {
+    width: 100%;
+  }
+  .cards {
+    margin-top: var(--spacing-sm);
+  }
+  .total-character, .word-count, .sentence-count {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #header {
+    padding: var(--spacing-xs) var(--spacing-md);
+  }
+  .logo {
+    width: 100%;
+  }
+ .logo img {
+    width: 60%;
+    object-fit: scale-down;
+  }
+  .theme-switcher img {
+    width: 80%;
+    object-fit: scale-down;
+  }
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+  .main-heading {
+    font-size: 3rem;
+  }
+  #typing-area {
+    padding: var(--spacing-sm);
+  }
+  .number {
+    font-size: 4rem;
+  }
+}

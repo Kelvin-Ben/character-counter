@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Character Counter</title>
-  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="shortcut icon" href="src/assets/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./src/css/main.css">
 </head>
 <body>
   <header id="header">
     <nav class="navbar">
       <div class="logo">
-        <img src="./images/logo-dark-theme.svg" class="hidden" alt="logo character counter" >
-        <img src="./images/logo-light-theme.svg" alt="logo character counter" srcset="">
+        <img src="src/assets/images/logo-dark-theme.svg" class="hidden" alt="logo character counter" >
+        <img src="src/assets/images/logo-light-theme.svg" alt="logo character counter" srcset="">
       </div>
-      <button class="theme-switcher">
-        <img src="./images/icon-moon.svg" alt="moon icon">
-        <img src="./images/icon-sun.svg" class="hidden" alt="Sun Icon">
+      <button class="theme-switcher" aria-label="Toggle theme">
+        <img src="src/assets/images/icon-moon.svg" alt="Moon icon">
+        <img src="src//assets/images/icon-sun.svg" class="hidden" alt="Sun Icon">
       </button>
     </nav>
   </header>
@@ -51,21 +51,21 @@
           <h2 class="number">00</h2>
           <p class="text">Total Characters</p>
         </div>
-        <img class="bg" src="./images/pattern-character-count.svg" alt="character count background">
+        <img class="bg" src="src/assets/images/pattern-character-count.svg" alt="character count background">
       </article>
       <article class="word-count">
         <div class="details">
           <h2 class="number">00</h2>
           <p class="text">Total Words</p>
         </div>
-        <img class="bg" src="./images/pattern-word-count.svg" alt="word count background">
+        <img class="bg" src="src/assets/images/pattern-word-count.svg" alt="word count background">
       </article>
       <article class="sentence-count">
         <div class="details">
           <h2 class="number">00</h2>
           <p class="text">Total Sentences</p>
         </div>
-        <img class="bg" src="./images/pattern-sentence-count.svg" alt="sentence count background">
+        <img class="bg" src="src/assets/images/pattern-sentence-count.svg" alt="sentence count background">
       </article>
     </section>
     <section class="density-area">
@@ -73,5 +73,6 @@
       <p class="alert">No characters found. Start typing to see letter density.</p>
     </section>
   </main>
+  <script type="module" src="./src/js/app.js"></script>
 </body>
 </html>

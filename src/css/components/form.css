@@ -19,7 +19,9 @@
   box-sizing: border-box;
   font-size: 1.5rem;
   background-color: var(--color-input-bg);
+  color: var(--color-text);
   border: none;
+  outline: var(--color-input-focus-border);
   padding: var(--spacing-md) var(--spacing-lg) 0 var(--spacing-lg);
   height: 15rem;
   border-radius: var(--border-radius-md);
@@ -28,7 +30,7 @@
 }
 
 #typing-area:focus {
-  outline: 2px solid var(--color-primary);
+  outline: 2px solid var(--color-input-focus);
   border: none;
 }
 

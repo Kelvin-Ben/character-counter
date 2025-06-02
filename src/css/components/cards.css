@@ -4,6 +4,8 @@
   gap: var(--spacing-md);
   margin: var(--spacing-md) 0;
   flex-wrap: wrap;
+  color: var(--color-text-card);
+  font-weight: 500;
 }
 
 .total-character, .sentence-count, .word-count {

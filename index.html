@@ -26,6 +26,9 @@
       <form action="" class="text-analysis-form">
         <label for="typing-area" class="visually-hidden">Text input area</label>
         <textarea name="text-input" id="typing-area" aria-label="Text area input" placeholder="Start typing here... (or paste your text)"></textarea>
+        <div class="character-limit-info">
+          <span class="remaining-chars"><span class="count">0</span></span>
+        </div>
         <div class="restriction">
           <div class="regulate">
             <div class="checkbox-group">
@@ -34,7 +37,7 @@
             </div>
             <div class="checkbox-group">
               <input type="checkbox" name="set limit" id="limit" />
-              <label for="spaces">Set Character Limit</label>
+              <label for="limit">Set Character Limit</label>
               <div class="input-group">
                 <label for="character-count" class="visually-hidden">Character limit</label>
                 <input type="text" id="character-count" name="character-limit" />

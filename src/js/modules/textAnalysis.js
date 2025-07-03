@@ -1,3 +1,4 @@
+import { debounce } from "../helper.js";
 export class TextAnalysis {
   constructor() {
     this.remainingCharsElement = document.querySelector('.remaining-chars .count');
@@ -13,7 +14,7 @@ export class TextAnalysis {
 
 
     // Create debounced version of updateTextArea
-    this.debouncedUpdateTextArea = this.debounce(this.updateTextArea.bind(this), 300);
+    this.debouncedUpdate = debounce(this.updateTextArea.bind(this), 300);
 
     this.initializeEventListeners();
   }
@@ -22,9 +23,9 @@ export class TextAnalysis {
     this.textArea.addEventListener('input', () => {
       this.analyzeText();
 
-      // call the debounceif when text changes
+      // call the debounce when text changes
       if(this.setLimitCheckbox.checked) {
-        this.debouncedUpdateTextArea()
+        this.debouncedUpdate()
       }
     });
     this.excludeSpacesCheckbox.addEventListener('change', () => this.analyzeText());
@@ -38,7 +39,7 @@ export class TextAnalysis {
     })
     this.characterLimitInput.addEventListener('input', () => {
       this.analyzeText();
-      this.debouncedUpdateTextArea();
+      this.debouncedUpdate();
     })
   }
 
@@ -108,7 +109,6 @@ export class TextAnalysis {
     // Update remaining characters display
     this.remainingCharsElement.textContent = `${remaining} / ${limit}`;
 
-    // CONTINUE FIXING THIS FEATURE
     // Update styling based on remaining characters
     this.remainingCharsElement.classList.remove('danger', 'warning');
     if (remaining <= 0) {
@@ -122,17 +122,6 @@ export class TextAnalysis {
     }
   }
 
-  // Debounce function to prevent multiple calls
-  debounce(func, delay) {
-    let timeoutId;
-    return function(...args) {
-      clearTimeout(timeoutId);
-      timeoutId = setTimeout(() => {
-        func.apply(this, args);
-      }, delay);
-    };
-  }
-
   // Update the text area to respect the character limit
   updateTextArea() {
     const limit = parseInt(this.characterLimitInput.value);
@@ -142,6 +131,7 @@ export class TextAnalysis {
     if (currentCount > limit) {
       this.textArea.value = this.textArea.value.slice(0, limit);
       this.analyzeText(); // Update all counters after truncating
+      this.textArea.dispatchEvent(new Event('input'))
     }
   }
 }

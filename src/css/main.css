@@ -6,6 +6,7 @@
 @import 'components/header.css';
 @import 'components/form.css';
 @import 'components/cards.css';
+@import 'components/letterDensity.css';
 
 /* Responsive */
 @import 'base/responsive.css';

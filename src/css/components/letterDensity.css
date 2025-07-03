@@ -1,0 +1,39 @@
+.density-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: .5rem;
+  width: 100%;
+}
+.letter {
+  width: 2rem;
+  font-weight: bold;
+}
+.bar-container {
+  width: 100%;
+  background-color: var(--color-input-text);
+  height: 1.2rem;
+  border-radius: .5rem;
+}
+.bar {
+  height: 1.2rem;
+  border-radius: .5rem;
+  background-color: var(--color-primary);
+  transition: background-color 2s;
+}
+.count, .percent {
+  min-width: 3%;
+  text-align: center;
+}
+.percent {
+  width: 5%;
+  text-align: right;
+}
+.show-more-btn {
+  cursor: pointer;
+  padding: .4rem .8rem;
+  background-color: var(--color-input-text);
+  border: none;
+  outline: none;
+  border-radius: .3rem;
+}
